@@ -45,13 +45,13 @@ public class RegistrationCourierTest {
         assertsRegistration.failedCreation(creatBaseCourier);
     }
 
-//    @Test
-//    @DisplayName("Создание курьера без заполнения обязательного поля имя")
-//    @Description("Проверяем код и описание ошибки при создание курьера с именем null")
-//    public void creatingCourierWithNullFirstName(){
-//        creatBaseCourier = creatingCourier.creatCourier(courierData.emptyFirstNameCourier());
-//        assertsRegistration.failedCreation(creatBaseCourier);
-//    }
+    @Test
+    @DisplayName("Создание курьера без заполнения обязательного поля имя")
+    @Description("Проверяем код и описание ошибки при создание курьера с именем null")
+    public void creatingCourierWithNullFirstName(){
+        creatBaseCourier = creatingCourier.creatCourier(courierData.emptyFirstNameCourier());
+        assertsRegistration.failedCreation(creatBaseCourier);
+    }
 
     @Test
     @DisplayName("Повторная регистрация учетной записи курьера")
