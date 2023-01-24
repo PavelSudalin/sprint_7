@@ -43,14 +43,14 @@ public class AuthenticationCourierTest {
 
     }
 
-//    @Test
-//    @DisplayName("Аутентификация password null")
-//    @Description("Аутентификация password null")
-//    public void courierAuthenticationWithEmptyPassword(){ //Оставил так специально т.к должна тут была вернутся 400 ошибка
-//            auth = Authentication.fromRegistrationCourier(courierData.emptyPasswordCourier());
-//            authBaseCourier = authCourier.authenticationCourier(auth);
-//            assertsLogin.filedAuthLoginOrPasswordNull(authBaseCourier);
-//    }
+    @Test
+    @DisplayName("Аутентификация password null")
+    @Description("Аутентификация password null")
+    public void courierAuthenticationWithEmptyPassword(){ //Оставил так специально т.к должна тут была вернутся 400 ошибка
+            auth = Authentication.fromRegistrationCourier(courierData.emptyPasswordCourier());
+            authBaseCourier = authCourier.authenticationCourier(auth);
+            assertsLogin.filedAuthLoginOrPasswordNull(authBaseCourier);
+    }
 
     @Test
     @DisplayName("Аутентификация не зарегистрированного курьера")
